@@ -13,8 +13,23 @@ html {
   font-weight: 300;
 }
 
+body {
+  background-color: #191919;
+}
+
 section {
-  padding: 0 4rem;
+  margin: 0 8.5rem 0 4rem;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  cursor: default;
+}
+.section__title:hover {
+  color: #787800;
 }
 
 h1 {
@@ -35,21 +50,93 @@ p {
   font-size: 1.6rem;
 }
 
-button {
+button,
+a {
   cursor: pointer;
+  text-decoration: none;
 }
 
-.top-page {
-  background-color: #191919;
-}
 .top-page__section-1 {
   height: 90vh;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+.top-page__section-2 {
+  padding-bottom: 5rem;
+  margin-top: 90vh;
 }
 
 .hero {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.top-page__nav {
+  position: fixed;
+  height: 100vh;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navi__profile-ctn {
+  text-align: center;
+  margin-top: 1rem;
+}
+.navi__profile-image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 1rem;
+}
+.navi__icons {
+  border-radius: 1rem;
+  background-color: #313131;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60%;
+}
+.navi__icon {
+  background-color: #f0f0f0;
+  width: 3rem;
+  height: 3rem;
+  transition: color 0.2s;
+}
+.navi__icon:hover {
+  background-color: #787800;
+}
+.navi__icon:active {
+  background-color: #f0f0f0;
+}
+
+.icon-github {
+  mask: url(../src/svg/github.svg) no-repeat;
+  -webkit-mask: url(../src/svg/github.svg) no-repeat;
+}
+.icon-codepen {
+  mask: url(../src/svg/codepen.svg) no-repeat;
+  -webkit-mask: url(../src/svg/codepen.svg) no-repeat;
+}
+.icon-codesandbox {
+  mask: url(../src/svg/codesandbox.svg) no-repeat;
+  -webkit-mask: url(../src/svg/codesandbox.svg) no-repeat;
+}
+.icon-facebook {
+  mask: url(../src/svg/facebook.svg) no-repeat;
+  -webkit-mask: url(../src/svg/facebook.svg) no-repeat;
+}
+.icon-instagram {
+  mask: url(../src/svg/instagram.svg) no-repeat;
+  -webkit-mask: url(../src/svg/instagram.svg) no-repeat;
+}
+.icon-twitter {
+  mask: url(../src/svg/twitter.svg) no-repeat;
+  -webkit-mask: url(../src/svg/twitter.svg) no-repeat;
 }
 
 .btn {
@@ -84,6 +171,32 @@ button {
 .btn__sec:active {
   color: #f0f0f0;
   border: 2px solid #787800;
+}
+
+.about {
+  background-color: #313131;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  max-height: 50rem;
+}
+.about__img {
+  border-radius: 1rem;
+  max-height: 50rem;
+}
+.about__me {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #191919;
+  border-radius: 1rem;
+  margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.about-info__about-txt {
+  text-align: justify;
+  padding: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

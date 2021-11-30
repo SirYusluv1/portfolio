@@ -1,0 +1,32 @@
+@import "../abstract/variables";
+
+.about {
+  background-color: #313131;
+  border-radius: $u-default-border-radius;
+  overflow: hidden;
+  display: flex;
+  max-height: 50rem;
+
+  &__img {
+    border-radius: $u-default-border-radius;
+    // width: 20%;
+    max-height: 50rem;
+  }
+
+  &__me {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-top-page;
+    border-radius: $u-default-border-radius;
+    margin: 1.5rem 0 1.5rem 1.5rem;
+  }
+}
+
+.about-info {
+  &__about-txt {
+    text-align: justify;
+    padding: 3rem;
+  }
+}
