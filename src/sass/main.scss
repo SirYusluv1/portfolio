@@ -1,7 +1,10 @@
 @import "base/base";
 
 @import "layout/top-page";
-@import "components/nav";
+@import "layout/section-project.scss";
 
+@import "components/nav";
 @import "components/_btn";
 @import "components/about";
+@import "components/icon";
+@import "components/project-item.scss";

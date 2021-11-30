@@ -8,13 +8,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -90vh;
+  z-index: 10;
 }
 
 .navi {
   &__profile {
-    &-link {
-    }
-
     &-ctn {
       text-align: center;
       margin-top: 1rem;
@@ -25,65 +24,15 @@
       height: 6rem;
       border-radius: $u-default-border-radius;
     }
-
-    &-name {
-    }
   }
 
   &__icons {
     border-radius: $u-default-border-radius;
-    background-color: rgb(49, 49, 49);
+    background-color: $color-nav-background;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 60%;
-  }
-
-  &__icon {
-    background-color: $color-text;
-    width: 3rem;
-    height: 3rem;
-    transition: color 0.2s;
-
-    &:hover {
-      background-color: $color-main;
-    }
-
-    &:active {
-      background-color: $color-text;
-    }
-  }
-}
-
-.icon {
-  &-github {
-    mask: url(../src/svg/github.svg) no-repeat;
-    -webkit-mask: url(../src/svg/github.svg) no-repeat;
-  }
-
-  &-codepen {
-    mask: url(../src/svg/codepen.svg) no-repeat;
-    -webkit-mask: url(../src/svg/codepen.svg) no-repeat;
-  }
-
-  &-codesandbox {
-    mask: url(../src/svg/codesandbox.svg) no-repeat;
-    -webkit-mask: url(../src/svg/codesandbox.svg) no-repeat;
-  }
-
-  &-facebook {
-    mask: url(../src/svg/facebook.svg) no-repeat;
-    -webkit-mask: url(../src/svg/facebook.svg) no-repeat;
-  }
-
-  &-instagram {
-    mask: url(../src/svg/instagram.svg) no-repeat;
-    -webkit-mask: url(../src/svg/instagram.svg) no-repeat;
-  }
-
-  &-twitter {
-    mask: url(../src/svg/twitter.svg) no-repeat;
-    -webkit-mask: url(../src/svg/twitter.svg) no-repeat;
   }
 }

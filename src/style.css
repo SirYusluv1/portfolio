@@ -19,13 +19,18 @@ body {
 
 section {
   margin: 0 8.5rem 0 4rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .section__title {
   font-weight: 700;
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  margin-bottom: 4rem;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   cursor: default;
 }
 .section__title:hover {
@@ -48,6 +53,7 @@ h3 {
 
 p {
   font-size: 1.6rem;
+  text-align: justify;
 }
 
 button,
@@ -63,7 +69,6 @@ a {
   z-index: -1;
 }
 .top-page__section-2 {
-  padding-bottom: 5rem;
   margin-top: 90vh;
 }
 
@@ -71,6 +76,20 @@ a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.section-project {
+  background-color: #313131;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: -1rem;
+}
+.project-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+.project-items-1 {
+  margin-bottom: 2rem;
 }
 
 .top-page__nav {
@@ -81,6 +100,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -90vh;
+  z-index: 10;
 }
 
 .navi__profile-ctn {
@@ -100,43 +121,6 @@ a {
   flex-direction: column;
   justify-content: space-around;
   height: 60%;
-}
-.navi__icon {
-  background-color: #f0f0f0;
-  width: 3rem;
-  height: 3rem;
-  transition: color 0.2s;
-}
-.navi__icon:hover {
-  background-color: #787800;
-}
-.navi__icon:active {
-  background-color: #f0f0f0;
-}
-
-.icon-github {
-  mask: url(../src/svg/github.svg) no-repeat;
-  -webkit-mask: url(../src/svg/github.svg) no-repeat;
-}
-.icon-codepen {
-  mask: url(../src/svg/codepen.svg) no-repeat;
-  -webkit-mask: url(../src/svg/codepen.svg) no-repeat;
-}
-.icon-codesandbox {
-  mask: url(../src/svg/codesandbox.svg) no-repeat;
-  -webkit-mask: url(../src/svg/codesandbox.svg) no-repeat;
-}
-.icon-facebook {
-  mask: url(../src/svg/facebook.svg) no-repeat;
-  -webkit-mask: url(../src/svg/facebook.svg) no-repeat;
-}
-.icon-instagram {
-  mask: url(../src/svg/instagram.svg) no-repeat;
-  -webkit-mask: url(../src/svg/instagram.svg) no-repeat;
-}
-.icon-twitter {
-  mask: url(../src/svg/twitter.svg) no-repeat;
-  -webkit-mask: url(../src/svg/twitter.svg) no-repeat;
 }
 
 .btn {
@@ -193,10 +177,103 @@ a {
   border-radius: 1rem;
   margin: 1.5rem 0 1.5rem 1.5rem;
 }
+.about__me-container {
+  background-color: #191919;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding-bottom: 21rem;
+}
 
 .about-info__about-txt {
-  text-align: justify;
   padding: 3rem;
+  line-height: 2.5rem;
+}
+
+.icon {
+  background-color: #f0f0f0;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.icon:hover {
+  background-color: #787800;
+}
+.icon:active {
+  background-color: #f0f0f0;
+}
+.icon-github {
+  mask: url(../src/svg/github.svg) no-repeat;
+  -webkit-mask: url(../src/svg/github.svg) no-repeat;
+}
+.icon-codepen {
+  mask: url(../src/svg/codepen.svg) no-repeat;
+  -webkit-mask: url(../src/svg/codepen.svg) no-repeat;
+}
+.icon-codesandbox {
+  mask: url(../src/svg/codesandbox.svg) no-repeat;
+  -webkit-mask: url(../src/svg/codesandbox.svg) no-repeat;
+}
+.icon-facebook {
+  mask: url(../src/svg/facebook.svg) no-repeat;
+  -webkit-mask: url(../src/svg/facebook.svg) no-repeat;
+}
+.icon-instagram {
+  mask: url(../src/svg/instagram.svg) no-repeat;
+  -webkit-mask: url(../src/svg/instagram.svg) no-repeat;
+}
+.icon-twitter {
+  mask: url(../src/svg/twitter.svg) no-repeat;
+  -webkit-mask: url(../src/svg/twitter.svg) no-repeat;
+}
+.icon-external-link {
+  mask: url(../src/svg/external_link.svg) no-repeat;
+  -webkit-mask: url(../src/svg/external_link.svg) no-repeat;
+}
+
+.project-item {
+  background-color: #191919;
+  border-radius: 1rem;
+  width: 30%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.project-item:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 5px 5px black;
+}
+.project-item:active {
+  transform: translateY(-0.8rem);
+  box-shadow: 0 3px 3px black;
+}
+.project-item__icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.project-item__icon-2 {
+  margin-left: 2rem;
+}
+.project-item__stack {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+.project-item__stack p {
+  font-size: 1.3rem;
+}
+
+.item-info__title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.item-info__info {
+  margin-top: 1rem;
+  line-height: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

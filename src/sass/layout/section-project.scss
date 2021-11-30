@@ -1,0 +1,24 @@
+@import "../abstract/variables";
+
+.section-project {
+  background-color: $color-nav-background;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  // added an extra 1rem in the top page section, subtracted it back now with a margin so some top page background won't disfigure my page
+  margin-top: -1rem;
+
+  &__title {
+    &-container {
+      //   padding-top: $size-seperate-section;
+    }
+  }
+}
+
+.project-items {
+  display: flex;
+  justify-content: space-evenly;
+
+  &-1 {
+    margin-bottom: 2rem;
+  }
+}

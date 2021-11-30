@@ -1,0 +1,56 @@
+@import "../abstract/variables";
+
+.project-item {
+  background-color: $color-top-page;
+  border-radius: $u-default-border-radius;
+  width: 30%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 5px 5px black;
+  }
+
+  &:active {
+    transform: translateY(-0.8rem);
+    box-shadow: 0 3px 3px black;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__icon {
+    &-2 {
+      margin-left: 2rem;
+    }
+  }
+
+  &__stack {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    & p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.item-info {
+  &__title {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  &__info {
+    margin-top: 1rem;
+    line-height: 2.5rem;
+  }
+}

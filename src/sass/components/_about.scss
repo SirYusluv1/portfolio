@@ -1,7 +1,7 @@
 @import "../abstract/variables";
 
 .about {
-  background-color: #313131;
+  background-color: $color-nav-background;
   border-radius: $u-default-border-radius;
   overflow: hidden;
   display: flex;
@@ -21,12 +21,20 @@
     background-color: $color-top-page;
     border-radius: $u-default-border-radius;
     margin: 1.5rem 0 1.5rem 1.5rem;
+
+    &-container {
+      background-color: $color-top-page;
+      border-top-left-radius: $u-default-border-radius;
+      border-top-right-radius: $u-default-border-radius;
+      // will subtract it back with marging in the next section, i don't wmat the top page to show in the background
+      padding-bottom: calc($size-seperate-section + 1rem);
+    }
   }
 }
 
 .about-info {
   &__about-txt {
-    text-align: justify;
     padding: 3rem;
+    line-height: 2.5rem;
   }
 }

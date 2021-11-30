@@ -1,0 +1,50 @@
+.icon {
+  background-color: $color-text;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover {
+    background-color: $color-main;
+  }
+
+  &:active {
+    background-color: $color-text;
+  }
+
+  &-github {
+    mask: url(../src/svg/github.svg) no-repeat;
+    -webkit-mask: url(../src/svg/github.svg) no-repeat;
+  }
+
+  &-codepen {
+    mask: url(../src/svg/codepen.svg) no-repeat;
+    -webkit-mask: url(../src/svg/codepen.svg) no-repeat;
+  }
+
+  &-codesandbox {
+    mask: url(../src/svg/codesandbox.svg) no-repeat;
+    -webkit-mask: url(../src/svg/codesandbox.svg) no-repeat;
+  }
+
+  &-facebook {
+    mask: url(../src/svg/facebook.svg) no-repeat;
+    -webkit-mask: url(../src/svg/facebook.svg) no-repeat;
+  }
+
+  &-instagram {
+    mask: url(../src/svg/instagram.svg) no-repeat;
+    -webkit-mask: url(../src/svg/instagram.svg) no-repeat;
+  }
+
+  &-twitter {
+    mask: url(../src/svg/twitter.svg) no-repeat;
+    -webkit-mask: url(../src/svg/twitter.svg) no-repeat;
+  }
+
+  &-external-link {
+    mask: url(../src/svg/external_link.svg) no-repeat;
+    -webkit-mask: url(../src/svg/external_link.svg) no-repeat;
+  }
+}
