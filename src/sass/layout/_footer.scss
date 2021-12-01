@@ -1,0 +1,30 @@
+@import "../abstract/variables";
+
+.conclusion-section {
+  text-align: center;
+  background-color: $color-top-page;
+  padding-top: $size-seperate-section;
+  padding-bottom: 3rem;
+
+  &__txt,
+  &__btn {
+    margin-top: 4rem;
+  }
+
+  &__txt {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    & a {
+      font-size: inherit;
+      text-decoration: underline;
+    }
+  }
+
+  &__copy {
+    margin-top: 15rem;
+    text-align: center;
+  }
+}
