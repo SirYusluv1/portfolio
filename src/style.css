@@ -7,20 +7,57 @@
   box-sizing: border-box;
   color: #f0f0f0;
 }
+@media only screen and (max-width: 1110px) {
+  *,
+*::before,
+*::after {
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 940px) {
+  *,
+*::before,
+*::after {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 470px) {
+  *,
+*::before,
+*::after {
+    font-size: 53%;
+  }
+}
 
 html {
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  background-color: #191919;
 }
 
 body {
-  background-color: #191919;
+  max-width: 1350px;
 }
 
 section {
   margin: 0 8.5rem 0 4rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  section {
+    margin: 0 4rem;
+  }
+}
+@media only screen and (max-width: 455px) {
+  section {
+    margin: 0 2rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  section {
+    margin: 0 1rem;
+  }
 }
 
 .section__title {
@@ -33,6 +70,11 @@ section {
   transform: translateX(-50%);
   cursor: default;
 }
+@media only screen and (max-width: 600px) {
+  .section__title {
+    margin-bottom: 2.5rem;
+  }
+}
 .section__title:hover {
   color: #787800;
 }
@@ -41,10 +83,50 @@ h1 {
   font-size: 7rem;
   font-weight: 900;
 }
+@media only screen and (max-width: 770px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 635px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 525px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (max-width: 525px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
 
 h2 {
   font-size: 6rem;
   font-weight: 700;
+}
+@media only screen and (max-width: 770px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 675px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 525px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 525px) {
+  h2 {
+    font-size: 3rem;
+  }
 }
 
 h3 {
@@ -54,6 +136,11 @@ h3 {
 p {
   font-size: 1.6rem;
   text-align: justify;
+}
+@media only screen and (max-width: 700px) {
+  p {
+    font-size: 1.8rem;
+  }
 }
 
 button,
@@ -89,8 +176,19 @@ a {
   display: flex;
   justify-content: space-evenly;
 }
+@media only screen and (max-width: 770px) {
+  .project-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .project-items-1 {
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 770px) {
+  .project-items-1 {
+    margin-bottom: 0;
+  }
 }
 
 .conclusion-section {
@@ -99,14 +197,34 @@ a {
   padding-top: 20rem;
   padding-bottom: 3rem;
 }
+@media only screen and (max-width: 600px) {
+  .conclusion-section {
+    padding-bottom: 12rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .conclusion-section {
+    padding-bottom: 8rem;
+  }
+}
 .conclusion-section__txt, .conclusion-section__btn {
   margin-top: 4rem;
+}
+.conclusion-section__btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .conclusion-section__txt {
   text-align: center;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (max-width: 770px) {
+  .conclusion-section__txt {
+    width: 80%;
+  }
 }
 .conclusion-section__txt a {
   font-size: inherit;
@@ -115,6 +233,11 @@ a {
 .conclusion-section__copy {
   margin-top: 15rem;
   text-align: center;
+}
+@media only screen and (max-width: 375px) {
+  .conclusion-section__copy {
+    margin-top: 10rem;
+  }
 }
 
 .top-page__nav {
@@ -127,6 +250,15 @@ a {
   align-items: center;
   margin-top: -90vh;
   z-index: 10;
+}
+@media only screen and (max-width: 600px) {
+  .top-page__nav {
+    inset: auto 50% 1rem auto;
+    transform: translateX(50%);
+    margin-top: 0;
+    height: auto;
+    width: 70%;
+  }
 }
 
 .navi__profile-ctn {
@@ -147,12 +279,36 @@ a {
   justify-content: space-around;
   height: 60%;
 }
+@media only screen and (max-width: 600px) {
+  .navi__icons {
+    flex-direction: row;
+    padding: 1rem 2rem;
+    width: 100%;
+    background-color: #464646;
+  }
+}
 
 .btn {
   font-size: 2rem;
   padding: 1.5rem 3rem;
   border-radius: 1rem;
   transition: all 0.2s;
+}
+@media only screen and (max-width: 600px) {
+  .btn {
+    font-size: 1.8rem;
+    padding: 1.5rem 2.6rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .btn {
+    padding: 1.3rem 2.4rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .btn {
+    display: block;
+  }
 }
 .btn-container {
   margin-top: 3rem;
@@ -162,6 +318,22 @@ a {
   border: 2px solid #787800;
   background-color: #787800;
   margin-right: 3rem;
+}
+@media only screen and (max-width: 600px) {
+  .btn__main {
+    margin-right: 2rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .btn__main {
+    margin-right: 1.3rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .btn__main {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
 }
 .btn__main:hover {
   box-shadow: 0 5px 10px black;
@@ -189,12 +361,23 @@ a {
   display: flex;
   max-height: 50rem;
 }
+@media only screen and (max-width: 550px) {
+  .about {
+    max-height: initial;
+  }
+}
 .about__img {
   border-radius: 1rem;
+  width: 35%;
   max-height: 50rem;
 }
+@media only screen and (max-width: 860px) {
+  .about__img {
+    display: none;
+  }
+}
 .about__me {
-  width: 100%;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,16 +385,41 @@ a {
   border-radius: 1rem;
   margin: 1.5rem 0 1.5rem 1.5rem;
 }
+@media only screen and (max-width: 600px) {
+  .about__me {
+    margin: 0;
+  }
+}
 .about__me-container {
   background-color: #191919;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   padding-bottom: 21rem;
 }
+@media only screen and (max-width: 600px) {
+  .about__me-container {
+    padding-bottom: 13rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .about__me-container {
+    padding-bottom: 9rem;
+  }
+}
 
+@media only screen and (max-width: 860px) {
+  .about-info {
+    background: transparent;
+  }
+}
 .about-info__about-txt {
   padding: 3rem;
-  line-height: 2.5rem;
+  line-height: 2.2rem;
+}
+@media only screen and (max-width: 1015px) {
+  .about-info__about-txt {
+    line-height: 2rem;
+  }
 }
 
 .icon {
@@ -268,6 +476,18 @@ a {
   cursor: pointer;
   transition: all 0.2s;
 }
+@media only screen and (max-width: 975px) {
+  .project-item {
+    width: 32%;
+    height: 40rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .project-item {
+    width: 70%;
+    margin-top: 1.5rem;
+  }
+}
 .project-item:hover {
   transform: translateY(-1rem);
   box-shadow: 0 5px 5px black;
@@ -298,7 +518,12 @@ a {
 }
 .item-info__info {
   margin-top: 1rem;
-  line-height: 2.5rem;
+  line-height: 2.2rem;
+}
+@media only screen and (max-width: 1015px) {
+  .item-info__info {
+    line-height: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

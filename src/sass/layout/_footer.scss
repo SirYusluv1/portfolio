@@ -6,9 +6,23 @@
   padding-top: $size-seperate-section;
   padding-bottom: 3rem;
 
+  @include responsive("MAX", 600px) {
+    padding-bottom: $size-seperate-section-mobile;
+  }
+
+  @include responsive("MAX", 400px) {
+    padding-bottom: $size-seperate-section-mobile-2;
+  }
+
   &__txt,
   &__btn {
     margin-top: 4rem;
+  }
+
+  &__btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__txt {
@@ -16,6 +30,10 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+
+    @include responsive("MAX", 770px) {
+      width: 80%;
+    }
 
     & a {
       font-size: inherit;
@@ -26,5 +44,9 @@
   &__copy {
     margin-top: 15rem;
     text-align: center;
+
+    @include responsive("MAX", 375px) {
+      margin-top: 10rem;
+    }
   }
 }

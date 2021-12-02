@@ -1,0 +1,13 @@
+@mixin responsive($min_max, $break-point) {
+  @if ($min_max == "MIN") {
+    @media only screen and (min-width: $break-point) {
+      @content;
+    }
+  }
+
+  @if ($min_max == "MAX") {
+    @media only screen and (max-width: $break-point) {
+      @content;
+    }
+  }
+}

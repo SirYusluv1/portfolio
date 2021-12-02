@@ -12,6 +12,16 @@
   cursor: pointer;
   transition: all 0.2s;
 
+  @include responsive("MAX", 975px) {
+    width: 32%;
+    height: 40rem;
+  }
+
+  @include responsive("MAX", 770px) {
+    width: 70%;
+    margin-top: 1.5rem;
+  }
+
   &:hover {
     transform: translateY(-1rem);
     box-shadow: 0 5px 5px black;
@@ -51,6 +61,10 @@
 
   &__info {
     margin-top: 1rem;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
+
+    @include responsive("MAX", 1015px) {
+      line-height: 2rem;
+    }
   }
 }

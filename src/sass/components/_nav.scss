@@ -10,6 +10,14 @@
   align-items: center;
   margin-top: -90vh;
   z-index: 10;
+
+  @include responsive("MAX", 600px) {
+    inset: auto 50% 1rem auto;
+    transform: translateX(50%);
+    margin-top: 0;
+    height: auto;
+    width: 70%;
+  }
 }
 
 .navi {
@@ -34,5 +42,12 @@
     flex-direction: column;
     justify-content: space-around;
     height: 60%;
+
+    @include responsive("MAX", 600px) {
+      flex-direction: row;
+      padding: 1rem 2rem;
+      width: 100%;
+      background-color: $color-nav-background-mobile;
+    }
   }
 }

@@ -1,10 +1,24 @@
 @import "../abstract/variables";
+@import "../abstract/mixins";
 
 .btn {
   font-size: 2rem;
   padding: 1.5rem 3rem;
   border-radius: $u-default-border-radius;
   transition: all 0.2s;
+
+  @include responsive("MAX", 600px) {
+    font-size: 1.8rem;
+    padding: 1.5rem 2.6rem;
+  }
+
+  @include responsive("MAX", 480px) {
+    padding: 1.3rem 2.4rem;
+  }
+
+  @include responsive("MAX", 400px) {
+    display: block;
+  }
 
   &-container {
     margin-top: 3rem;
@@ -15,6 +29,19 @@
     border: 2px solid $color-main;
     background-color: $color-main;
     margin-right: 3rem;
+
+    @include responsive("MAX", 600px) {
+      margin-right: 2rem;
+    }
+
+    @include responsive("MAX", 480px) {
+      margin-right: 1.3rem;
+    }
+
+    @include responsive("MAX", 400px) {
+      margin: 0;
+      margin-bottom: 1.5rem;
+    }
 
     &:hover {
       box-shadow: 0 5px 10px black;

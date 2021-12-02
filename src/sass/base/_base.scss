@@ -1,4 +1,5 @@
 @import "../abstract/variables";
+@import "../abstract/mixins";
 
 *,
 *::before,
@@ -9,23 +10,46 @@
   font-size: 62.5%;
   box-sizing: border-box;
   color: $color-text;
+
+  @include responsive("MAX", 1110px) {
+    font-size: 60%;
+  }
+
+  @include responsive("MAX", 940px) {
+    font-size: 55%;
+  }
+
+  @include responsive("MAX", 470px) {
+    font-size: 53%;
+  }
 }
 
 html {
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  background-color: $color-top-page;
 }
 
 body {
-  background-color: $color-top-page;
+  max-width: 1350px;
 }
 
 section {
   margin: 0 8.5rem 0 4rem;
-  // padding-left: 4rem;
-  // margin-right: 8.5rem;
   border-top-left-radius: $u-default-border-radius;
   border-top-right-radius: $u-default-border-radius;
+
+  @include responsive("MAX", 600px) {
+    margin: 0 4rem;
+  }
+
+  @include responsive("MAX", 455px) {
+    margin: 0 2rem;
+  }
+
+  @include responsive("MAX", 420px) {
+    margin: 0 1rem;
+  }
 }
 
 .section__title {
@@ -38,6 +62,10 @@ section {
   transform: translateX(-50%);
   cursor: default;
 
+  @include responsive("MAX", 600px) {
+    margin-bottom: 2.5rem;
+  }
+
   &:hover {
     color: $color-main;
   }
@@ -46,11 +74,43 @@ section {
 h1 {
   font-size: 7rem;
   font-weight: 900;
+
+  @include responsive("MAX", 770px) {
+    font-size: 6rem;
+  }
+
+  @include responsive("MAX", 635px) {
+    font-size: 5rem;
+  }
+
+  @include responsive("MAX", 525px) {
+    font-size: 4.5rem;
+  }
+
+  @include responsive("MAX", 525px) {
+    font-size: 4rem;
+  }
 }
 
 h2 {
   font-size: 6rem;
   font-weight: 700;
+
+  @include responsive("MAX", 770px) {
+    font-size: 5rem;
+  }
+
+  @include responsive("MAX", 675px) {
+    font-size: 4rem;
+  }
+
+  @include responsive("MAX", 525px) {
+    font-size: 3.5rem;
+  }
+
+  @include responsive("MAX", 525px) {
+    font-size: 3rem;
+  }
 }
 
 h3 {
@@ -60,6 +120,10 @@ h3 {
 p {
   font-size: 1.6rem;
   text-align: justify;
+
+  @include responsive("MAX", 700px) {
+    font-size: 1.8rem;
+  }
 }
 
 button,
