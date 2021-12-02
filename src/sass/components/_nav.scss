@@ -10,6 +10,7 @@
   align-items: center;
   margin-top: -90vh;
   z-index: 10;
+  display: flex;
 
   @include responsive("MAX", 600px) {
     inset: auto 50% 1rem auto;
