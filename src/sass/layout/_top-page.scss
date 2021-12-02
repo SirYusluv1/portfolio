@@ -5,7 +5,10 @@
     &-1 {
       height: 90vh;
       position: fixed;
-      inset: 0;
+      // inset: 0; // not working for edge
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: -1;
     }
 

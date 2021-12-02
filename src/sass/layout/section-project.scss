@@ -17,6 +17,13 @@
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 
+  // edge does not support "space-evenly" but supports space between
+  // the logic is to detect feature only supported by edge which is "-ms-ime-align:" then use "space-around" so only edge would use "space-around"
+  @supports (-ms-ime-align: auto) {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
   @include responsive("MAX", 770px) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
