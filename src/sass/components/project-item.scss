@@ -5,11 +5,20 @@
   border-radius: $u-default-border-radius;
   width: 30%;
   height: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 2rem;
   cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 
   @include responsive("MAX", 975px) {
@@ -23,17 +32,27 @@
   }
 
   &:hover {
+    -webkit-transform: translateY(-1rem);
+    -ms-transform: translateY(-1rem);
     transform: translateY(-1rem);
+    -webkit-box-shadow: 0 5px 5px black;
     box-shadow: 0 5px 5px black;
   }
 
   &:active {
+    -webkit-transform: translateY(-0.8rem);
+    -ms-transform: translateY(-0.8rem);
     transform: translateY(-0.8rem);
+    -webkit-box-shadow: 0 3px 3px black;
     box-shadow: 0 3px 3px black;
   }
 
   &__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
   }
 
@@ -44,7 +63,11 @@
   }
 
   &__stack {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     font-weight: 300;
     & p {
