@@ -67,6 +67,7 @@ section {
   margin-bottom: 4rem;
   display: inline-block;
   position: relative;
+  color: #787800;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -78,13 +79,11 @@ section {
     margin-bottom: 2.5rem;
   }
 }
-.section__title:hover {
-  color: #787800;
-}
 
 h1 {
   font-size: 7rem;
   font-weight: 900;
+  color: #c8c8c8;
 }
 @media only screen and (max-width: 770px) {
   h1 {
@@ -238,6 +237,9 @@ a {
   .conclusion-section {
     padding-bottom: 8rem;
   }
+}
+.conclusion-section__title {
+  color: #c8c8c8;
 }
 .conclusion-section__txt, .conclusion-section__btn {
   margin-top: 4rem;
@@ -406,7 +408,8 @@ a {
 }
 .btn__sec {
   background: none;
-  border: 2px solid #f0f0f0;
+  border: 2px solid #c8c8c8;
+  color: #c8c8c8;
 }
 .btn__sec:hover {
   border: 2px solid #787800;
@@ -441,6 +444,25 @@ a {
     display: none;
   }
 }
+.about__img-mobile {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+  display: none;
+}
+@media only screen and (max-width: 860px) {
+  .about__img-mobile {
+    display: initial;
+  }
+}
+.about__title {
+  left: auto;
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+  margin-bottom: 0;
+}
 .about__me {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -461,6 +483,23 @@ a {
 @media only screen and (max-width: 600px) {
   .about__me {
     margin: 0;
+  }
+}
+.about__me-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 600px) {
+  .about__me {
+    margin-bottom: 2.5rem;
   }
 }
 .about__me-container {
@@ -496,7 +535,7 @@ a {
 }
 
 .icon {
-  background-color: #f0f0f0;
+  background-color: #c8c8c8;
   width: 3rem;
   height: 3rem;
   cursor: pointer;
@@ -568,7 +607,7 @@ a {
 }
 @media only screen and (max-width: 770px) {
   .project-item {
-    width: 70%;
+    width: 80%;
     margin-top: 1.5rem;
   }
 }
@@ -608,11 +647,13 @@ a {
 }
 .project-item__stack p {
   font-size: 1.3rem;
+  color: #c8c8c8;
 }
 
 .item-info__title {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #c8c8c8;
 }
 .item-info__info {
   margin-top: 1rem;

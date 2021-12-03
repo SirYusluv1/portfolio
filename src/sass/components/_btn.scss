@@ -58,7 +58,8 @@
 
   &__sec {
     background: none;
-    border: 2px solid $color-text;
+    border: 2px solid $color-text-sec;
+    color: $color-text-sec;
 
     &:hover {
       border: 2px solid $color-main;

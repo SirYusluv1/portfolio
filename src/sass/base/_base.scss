@@ -59,6 +59,7 @@ section {
   margin-bottom: 4rem;
   display: inline-block;
   position: relative;
+  color: $color-main;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -68,15 +69,12 @@ section {
   @include responsive("MAX", 600px) {
     margin-bottom: 2.5rem;
   }
-
-  &:hover {
-    color: $color-main;
-  }
 }
 
 h1 {
   font-size: 7rem;
   font-weight: 900;
+  color: $color-text-sec;
 
   @include responsive("MAX", 770px) {
     font-size: 6rem;

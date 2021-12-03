@@ -27,7 +27,7 @@
   }
 
   @include responsive("MAX", 770px) {
-    width: 70%;
+    width: 80%;
     margin-top: 1.5rem;
   }
 
@@ -72,6 +72,7 @@
     font-weight: 300;
     & p {
       font-size: 1.3rem;
+      color: $color-text-sec;
     }
   }
 }
@@ -79,7 +80,8 @@
 .item-info {
   &__title {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: $color-text-sec;
   }
 
   &__info {
